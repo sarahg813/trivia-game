@@ -3,9 +3,9 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Trivia Game</title>
+    <title>Harry Potter Trivia Game</title>
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai|Dancing+Script|Montserrat|Rancho" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Jolly+Lodger|Quintessential|Tangerine" rel="stylesheet">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
@@ -17,32 +17,43 @@
 
 <body>
     <div class="main-header">
-        <h1>Trivia Game</h1>
+        <img id="hpHeader" src="assets/images/hp-header.png" alt="hp-header" />
     </div>
    
     <div class="main">
-        <button id="startButton">Press Start to Play!</button>
+        <div id="startDiv">
+            <h2>Press</h2>
+            <button class="btn btn-outline-warning" id="startButton">Start</button>
+            <h2>to Play!</h2>
+        </div>
+
         <div class="triviaDiv container">
             <div class="timerDiv">
                 <p> Time Remaining: <span id="countdownTimer"></span> seconds</p>
             </div>
             <h3 id="triviaQuestion"></h3>
-            <div class="answersButtons"></div>
-            
+            <div class="answersButtonsDiv"></div>
         </div>
 
         <div class="triviaAnswer">
             <h3 id="phrase"></h3>
             <p id="finalAnswer"></p>
             <div id="answerExp"></div>
+            <div id="giphy">
+                <iframe id="giphy-embed" src="" frameBorder="0" ></iframe>
+            </div>
         </div>
 
-        <div id="finalScreenDiv">
-        
+        <div class="finalResultDiv">
+            <h2>Game Over!</h2>
+
+            <p>Total correct answered: <span id="correctTotal"></span></p>
+            <p>Total wrong answered: <span id="wrongTotal"></span></p>
+            <p>Total unanswered: <span id="unansweredTotal"></span></p>
+
+            <button class="btn btn-outline-warning" id="playAgain"> Play again!</button>
         </div>
-        
-
-
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/javascript/app.js" type="text/javascript"></script>

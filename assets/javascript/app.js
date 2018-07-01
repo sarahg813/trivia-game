@@ -1,3 +1,4 @@
+//array of objects that include the question, answers, correct answer, explanation & img url
 var triviaQuestions = [
     {
         question: "What is Harry known for?",
@@ -8,7 +9,8 @@ var triviaQuestions = [
             d: "The Boy Who Loved"
         },
         correctAnswer: "b",
-        explanation: "When Voldemort, a powerful dark wizard, failed to kill Harry when he was a baby, people in the wizarding world named him as \"The Boy Who Lived.\""
+        explanation: "When Voldemort, a powerful dark wizard, failed to kill Harry when he was a baby, people in the wizarding world named him as \"The Boy Who Lived.\"",
+        url: "https://giphy.com/embed/V2Quy9utov4RO"
     },
     {
         question: "How many siblings does Ron Weasley have?",
@@ -20,6 +22,7 @@ var triviaQuestions = [
         },
         correctAnswer: "c",
         explanation: "Ron has six siblings: Bill, Charlie, Percy, twins Fred and George, and a younger sister, Ginny.",
+        url: "https://giphy.com/embed/13ncHUGj2wtdKg"
     },
     {
         question: "What is a Muggle?",
@@ -30,7 +33,8 @@ var triviaQuestions = [
             d: "A person that has a lot of mugs"
         },
         correctAnswer: "a",
-        explanation: "A Muggle is a person who lacks any sort of magical ability and was not born in a magical family."
+        explanation: "A Muggle is a person who lacks any sort of magical ability and was not born in a magical family.",
+        url: "https://giphy.com/embed/RtQUhSo7B5pyo"
     },
     {
         question: "Albus Dumbledore is the headmaster of which school?",
@@ -41,10 +45,11 @@ var triviaQuestions = [
             d: "Hogwarts"
         },
         correctAnswer: "d",
-        explanation: "Dumbledore is the headmaster of Hogwarts School of Witchcraft and Wizardry. It is the British wizarding school, located in the Highlands of Scotland. It takes students from the United Kingdom of Great Britain and Northern Ireland, and Ireland."
+        explanation: "Dumbledore is the headmaster of Hogwarts School of Witchcraft and Wizardry. It is the British wizarding school, located in the Highlands of Scotland.",
+        url: "https://giphy.com/embed/THS0CXw1xkgow"
     }, 
     {
-        question: "Who is Harry\’s other best friend besides Ron Weasley?",
+        question: "Who is Harry\'s other best friend besides Ron Weasley?",
         answers: {
             a: "Cho Chang",
             b: "Hermione Granger",
@@ -52,32 +57,35 @@ var triviaQuestions = [
             d: "Bellatrix Lestrange"
         },
         correctAnswer: "b",
-        explanation: "Hermione stepped in to take the blame from Ron and Harry after they had saved her from a mountain troll in the girls\’ toilets. Harry and Ron were surprised, but grateful and the three quickly became best friends. She often uses her quick wit, deft recall, and encyclopedic knowledge to help them."
+        explanation: "Harry, Ron and Hermione quickly became best friends after an incident with a mountain troll. She often uses her quick wit, deft recall, and encyclopedic knowledge to help them.",
+        url: "https://giphy.com/embed/qOWqY8BR3A9K8"
     },
     {
         question: "Which team sport does Harry play in Hogwarts?",
         answers: {
             a: "Quidditch",
             b: "Football",
-            c: "Baseball",
+            c: "Basketball",
             d: "Hockey"
         },
         correctAnswer: "a",
-        explanation: "Quidditch is a wizarding sport played on broomsticks. It is the most popular game and most well-known game among wizards and witches"
+        explanation: "Quidditch is a wizarding sport played on broomsticks. It is the most popular game and most well-known game among wizards and witches",
+        url: "https://giphy.com/embed/w5FqzCaXpW0tq"
     },
     {
         question: "Who is Hedwig?",
         answers: {
-            a: "Harry’s friend that lives in a hut",
+            a: "Harry\'s friend that lives in a hut",
             b: "The house-elf that was freed",
             c: "A snowy owl",
-            d: "The flying creature that’s half eagle and half horse"
+            d: "The flying creature that\'s half eagle and half horse"
         },
         correctAnswer: "c",
-        explanation: "Hedwig is Harry Potter\'s pet Snowy Owl. Hedwig was an 11th birthday gift from Hagrid to Harry."
+        explanation: "Hedwig is Harry Potter\'s pet Snowy Owl. Hedwig was an 11th birthday gift from Hagrid to Harry.",
+        url: "https://giphy.com/embed/6cmaghxnGdjj2"
     },
     {
-        questions: "Which creatures can Harry speak to in their language?",
+        question: "Which creatures can Harry speak to in their language?",
         answers: {
             a: "Hippogriffs",
             b: "Dragons",
@@ -85,7 +93,8 @@ var triviaQuestions = [
             d: "Serpents"
         },
         correctAnswer: "d",
-        explanation: "Harry can speak Parseltongue to serpents. It is the language of serpents (as well as other magical serpent-based creatures, like the Runespoor and Basilisk) and those who can converse with them. An individual who can speak parseltongue is known as a Parselmouth."
+        explanation: "Harry can speak Parseltongue to serpents. It is the language of serpents. An individual who can speak parseltongue is known as a Parselmouth.",
+        url: "https://giphy.com/embed/si9QFUXkItieY"
     },
     {
         question: "What does the charm, Wingardium Leviosa, do?",
@@ -96,7 +105,8 @@ var triviaQuestions = [
             d: "It turns your wand into a flashlight"
         },
         correctAnswer: "a",
-        explanation: "The Levitation Charm, Wingardium Leviosa, is a charm used to make objects fly, or levitate."
+        explanation: "The Levitation Charm, Wingardium Leviosa, is a charm used to make objects fly, or levitate.",
+        url: "https://giphy.com/embed/RyLtUMBdogHvO"
     },
     {
         question: "What are the four houses of Hogwarts?",
@@ -107,74 +117,87 @@ var triviaQuestions = [
             d: "Gryffindor, Hogsmeade, Marauder, and Snape"
         },
         correctAnswer: "b",
-        explanation: "Hogwarts School of Witchcraft and Wizardry was divided into four houses, each bearing the last name of its founder: Godric Gryffindor, Helga Hufflepuff, Rowena Ravenclaw and Salazar Slytherin."
+        explanation: "Hogwarts School of Witchcraft and Wizardry was divided into four houses, each bearing the last name of its founder: Godric Gryffindor, Helga Hufflepuff, Rowena Ravenclaw and Salazar Slytherin.",
+        url: "https://giphy.com/embed/oaOhFJkKoiuZi"
     }
 ];
 
-var correctTotal = 0;
-var wrongTotal = 0;
-var unansweredTotal = 0;
-var seconds = 0;
-var timer;
-var shortTimer;
-var button;
-var index = 0;
-var answer = "";
-var phrase = "";
+var correctTotal = 0; //number of total correct answers
+var wrongTotal = 0; //number of total wrong answers
+var unansweredTotal = 0; //number of total unanswered
+var seconds = 25; //number of seconds to start for timer
+var timer; //variable for the setInterval 
+var shortTimer; //variable for the setTimeout
+var button; //variable for button tags
+var index = 0; //index for the objects in the triviaQuestions array
+var answer = ""; //variable for trivia answer
+var phrase = ""; //variable for trivia phrase
+var runTimer = false; //countdown starts if function is called and this is false
 
-$('#startButton').on('click', function() {
-    $('#startButton').hide();
+//display seconds before countdown begins
+$('#countdownTimer').text(seconds);
 
-    displayQuestion();
-})
-
-function startCountdown() {
+//function to start subtracting 1 from the seconds 
+function countdown() {
     seconds--;
     $('#countdownTimer').text(seconds);
 
-    if (seconds === 0) {
-        answer = "out of time";
-        unansweredTotal++;
-        answerPhrase();
-        displayAnswer();
+    if (seconds == 0) {
+        answer = "zeroTime"; //the "zeroTime" phrase displays on screen from answerPhrase()
+        unansweredTotal++; // add 1 to unansweredTotal var
+        stopCountdown(); //executes to stop the timer
+        answerPhrase(); //phrase from function executes
+        displayAnswer(); //executes to display the answer div
     }
+}
+
+//start the countdown if runTimer is false then run the setInterval
+function startCountdown() {
+    if (!runTimer) {
+        timer = setInterval(countdown, 1000);
+        runTimer = true;
+    }
+}
+
+//when stopCountDown is executed...
+function stopCountdown() {
+    runTimer = false; //make runTimer false
+    clearInterval(timer); //clear the setInterval
+    seconds = 25; //reset the seconds var back to 25
+    $('#countdownTimer').text(seconds); //display 25 for seconds on screen
 }
 
 function displayQuestion() { 
-    seconds = 30;
+    $('.triviaAnswer').hide(); //hides triviaAnswer div
+    $('.finalResultDiv').hide(); //hides finalResultDiv div
+    $('.triviaDiv').show(); //shows the triviaDiv 
 
-    $('.triviaAnswer').hide();
-    $('.triviaDiv').show();
-
+    //adds the question to display on html
     $('#triviaQuestion').text(triviaQuestions[index]["question"]);
 
+    // for loop for the answer options in the object
     for (var key in triviaQuestions[index]["answers"]) {
         button = $('<button>');
         var buttonText = triviaQuestions[index]["answers"][key];
-        var buttonClass = "btn btn-secondary btn-lg btn-block";
+        var buttonClass = "btn btn-secondary btn-lg btn-block answerButtons";
 
+        //creates button with the text, attribute, and adds data-value
         button.text(buttonText).addClass(buttonClass).attr('data-val', key);
 
-        $('.answersButtons').append(button);
-
+        //appends the button to the div in html
+        $('.answersButtonsDiv').append(button);
     }
-
-    $('#countdownTimer').text(seconds);
-
-    timer = setInterval(startCountdown, 1000);
-
-    console.log(correctTotal);
+    //execute the countdown function
+    startCountdown();
 }
 
-
-
-
+//function to select the phrase shown when the answer div displays in html
 function answerPhrase() {
     $('#phrase').empty();
 
     if(answer === "correct") {
         phrase = "You're correct!";
-    } else if (answer === "out of time") {
+    } else if (answer === "zeroTime") {
         phrase = "Sorry, you're out of time!"
     } else if (answer === "wrong") {
         phrase = "Oops, you're wrong!";
@@ -183,36 +206,74 @@ function answerPhrase() {
     $('#phrase').text(phrase);
 }
 
+//displays the answer and giphy 
 function displayAnswer() {
-    
-    var answerLetter = triviaQuestions[index]["correctAnswer"];
-
     $('.triviaAnswer').show();
     $('.triviaDiv').hide();
 
+    var answerLetter = triviaQuestions[index]["correctAnswer"];
+
     $('#finalAnswer').text("The answer is: " + triviaQuestions[index]["answers"][answerLetter]);
     $('#answerExp').text(triviaQuestions[index]["explanation"]);
+    $('#giphy-embed').attr('src', triviaQuestions[index]["url"]);
 
-    index++;
-    $('.answersButtons').empty();
+    index++; //adds 1 to index to iterate to the next question
+    $('.answersButtonsDiv').empty();
     
     clearInterval(shortTimer); 
-    shortTimer = setTimeout(displayQuestion, 5000);
+    shortTimer = setTimeout(isFinalResult, 6000); 
+    //setTimeout to run the function isFinalResult after 6 sec
 }
 
+//function to check if quiz is done, or else execute the next question
+function isFinalResult() {
+    if (index === triviaQuestions.length) {
+        $('.triviaAnswer').hide();
+        $('.finalResultDiv').show();
 
-$(document).on('click', '.btn', function(){
-    var clickAnswer = $(this);
-    var answerVal = clickAnswer.attr('data-val');
-
-    if (answerVal === triviaQuestions[index]["correctAnswer"]) {
-        answer = "correct";
-        correctTotal++;
-        answerPhrase();
-        displayAnswer();
+        $("#correctTotal").text(correctTotal);
+        $("#wrongTotal").text(wrongTotal);
+        $("#unansweredTotal").text(unansweredTotal);
     } else {
-        answer = "wrong";
-        wrongTotal++;
+        displayQuestion();
+    }
+}
+
+//function for playAgain button
+$('#playAgain').on('click', function() {
+    //reset the variables
+    correctTotal = 0;
+    wrongTotal = 0;
+    unansweredTotal = 0;
+    seconds = 26;
+    index = 0;
+
+    displayQuestion();
+});
+
+//when you click the start button the first question displays
+$('#startButton').on('click', function() {
+    $('#startDiv').hide();
+
+    displayQuestion();
+});
+
+//to select the document so that the buttons work after adding them to html
+$(document).on('click', '.answerButtons', function(){
+    var clickAnswer = $(this); //user clicks and that button = this
+    var answerVal = clickAnswer.attr('data-val'); //store the data-val from that button
+
+    //if the data-val matches the correctAnswer then
+    if (answerVal === triviaQuestions[index]["correctAnswer"]) {
+        answer = "correct"; //the "correct" phrase displays on screen from answerPhrase()
+        correctTotal++; // add 1 to correctTotal var
+        stopCountdown(); 
+        answerPhrase(); 
+        displayAnswer();
+    } else { //if user selects the wrong answer
+        answer = "wrong"; //the "wrong" phrase displays on screen from answerPhrase()
+        wrongTotal++; // add 1 to wrongTotal var
+        stopCountdown(); 
         answerPhrase();
         displayAnswer();
     }
